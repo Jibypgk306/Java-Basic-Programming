@@ -1,4 +1,4 @@
-package whil;
+package questions;
 
 import java.util.Scanner;
 

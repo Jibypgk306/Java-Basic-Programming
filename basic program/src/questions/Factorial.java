@@ -1,4 +1,4 @@
-package controlstructure;
+package questions;
 
 import java.util.Scanner;
 

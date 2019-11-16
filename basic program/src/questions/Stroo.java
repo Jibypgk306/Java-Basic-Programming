@@ -1,42 +1,40 @@
-package whil;
+package questions;
 
 import java.util.Scanner;
 
-public class Armstrong {
+public class Stroo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Scanner s=new Scanner(System.in);
 		System.out.println("ENTER THE NUMBER");
 		int a=s.nextInt();
 		int b=a;
-		int c=a;
 		int r;
-		int count=0;
 		double  sum=0;
-		while(c!=0)
-		{
-			count++;
-			c=c/10;
-		}
+		
+		
 		while(a!=0)
 		{
+			int fact=1;
 			r=a%10;
-			sum=sum+Math.pow(r,count);
+			for(int i=1;i<=r;i++)
+			{
+			 fact=fact*i;
+		}
+			sum=sum+fact;
 			a=a/10;
 		}
-		System.out.println(sum);
 		if(sum==b)
 		{
-			System.out.println("Armstrong");
+			System.out.println("strong");
 
 		}
 		else
 		{
-			System.out.println("not armstrong");
+			System.out.println("not strong");
 
 		}
+		s.close();
 	}
 
 }

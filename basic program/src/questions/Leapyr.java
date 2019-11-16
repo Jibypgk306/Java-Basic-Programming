@@ -1,4 +1,4 @@
-package leap;
+package questions;
 
 import java.util.Scanner;
 

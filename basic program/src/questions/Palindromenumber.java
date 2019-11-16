@@ -1,8 +1,7 @@
-package whil;
-
+package questions;
 import java.util.Scanner;
 
-public class Reverse {
+public class Palindromenumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,6 +10,7 @@ public class Reverse {
 		
 		System.out.println("ENTER THE NUMBER");
 		int n=s.nextInt();
+		int t=n;
 		int r=0;
 		int a;
 		do
@@ -20,7 +20,14 @@ public class Reverse {
 			n=n/10;
 		}
 		while(n!=0);
-		System.out.println(r);
+		if(r==t)
+		{
+		System.out.println("Palindrome number");
+	}
+		else
+		{
+			System.out.println("Not Palindrome number");
 
+		}
 	}
 }
